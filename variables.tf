@@ -13,7 +13,7 @@ variable "ecr_repository_name" {
 variable "s3_bucket_name" {
   description = "The name of the S3 bucket to store Terraform state"
   type        = string
-  default     = "manas-ecr-terraform-state-bucket123"
+  default     = "ravindra-ecr-terraform-state-bucket128"
 }
 
 variable "state_file_key" {
@@ -25,5 +25,5 @@ variable "state_file_key" {
 variable "dynamodb_table_name" {
   description = "The name of the DynamoDB table for state locking"
   type        = string
-  default     = "ecr-terraform-locks-753159"
+  default     = "ecr-terraform-locks-753157"
 }
