@@ -14,21 +14,21 @@ provider "aws" {
 # }
 
 # Create a DynamoDB table for Terraform state locking
-resource "aws_dynamodb_table" "terraform_lock" {
-  name         = var.dynamodb_table_name
-  billing_mode = "PAY_PER_REQUEST"
-  hash_key     = "LockID"
+#resource "aws_dynamodb_table" "terraform_lock" {
+#  name         = var.dynamodb_table_name
+#  billing_mode = "PAY_PER_REQUEST"
+#  hash_key     = "LockID"
 
-  attribute {
-    name = "LockID"
-    type = "S"
-  }
+#  attribute {
+#    name = "LockID"
+#    type = "S"
+#  }
 
   # Ensure the table is unique
-  lifecycle {
-    prevent_destroy = true
-  }
-}
+#  lifecycle {
+#    prevent_destroy = true
+#  }
+#}
 
 # Create an ECR repository
 resource "aws_ecr_repository" "my_ecr_repository" {
