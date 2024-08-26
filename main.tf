@@ -3,15 +3,15 @@ provider "aws" {
 }
 
 # Create an S3 bucket for Terraform state
-resource "aws_s3_bucket" "terraform_state" {
-  bucket = var.s3_bucket_name
-  acl    = "private"
+# resource "aws_s3_bucket" "terraform_state" {
+#   bucket = var.s3_bucket_name
+#   acl    = "private"
 
-  # Ensure the bucket is unique
-  lifecycle {
-    prevent_destroy = true
-  }
-}
+#    Ensure the bucket is unique
+#     lifecycle {
+#     prevent_destroy = true
+#   }
+# }
 
 # Create a DynamoDB table for Terraform state locking
 resource "aws_dynamodb_table" "terraform_lock" {
