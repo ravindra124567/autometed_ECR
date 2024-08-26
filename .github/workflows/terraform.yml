@@ -70,10 +70,10 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build . -t ${{ steps.ecr-login.outputs.registry }}/my_ecr_repository:${{ github.run_number }}
-          docker tag ${{ steps.ecr-login.outputs.registry }}/my_ecr_repository:${{ github.run_number }} ${{ steps.ecr-login.outputs.registry }}/my_ecr_repository:latest
+          docker build . -t ${{ steps.ecr-login.outputs.registry }}/terraform-repository:${{ github.run_number }}
+          docker tag ${{ steps.ecr-login.outputs.registry }}/terraform-repository:${{ github.run_number }} ${{ steps.ecr-login.outputs.registry }}/terraform-repository:latest
 
       - name: Push Docker image
         run: |
-          docker push ${{ steps.ecr-login.outputs.registry }}/my_ecr_repository:${{ github.run_number }}
-          docker push ${{ steps.ecr-login.outputs.registry }}/my_ecr_repository:latest
+          docker push ${{ steps.ecr-login.outputs.registry }}/terraform-repository:${{ github.run_number }}
+          docker push ${{ steps.ecr-login.outputs.registry }}/terraform-repository:latest
