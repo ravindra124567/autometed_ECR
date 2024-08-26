@@ -13,7 +13,7 @@ variable "ecr_repository_name" {
 variable "s3_bucket_name" {
   description = "The name of the S3 bucket to store Terraform state"
   type        = string
-  default     = "my-terraform-state-bucket"
+  default     = "manas-ecr-terraform-state-bucket123"
 }
 
 variable "state_file_key" {
