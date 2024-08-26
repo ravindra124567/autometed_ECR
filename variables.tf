@@ -7,7 +7,7 @@ variable "aws_region" {
 variable "ecr_repository_name" {
   description = "The name of the ECR repository"
   type        = string
-  default     = "my-repository"
+  default     = "terraform-repository"
 }
 
 variable "s3_bucket_name" {
@@ -25,5 +25,5 @@ variable "state_file_key" {
 variable "dynamodb_table_name" {
   description = "The name of the DynamoDB table for state locking"
   type        = string
-  default     = "terraform-locks"
+  default     = "ecr-terraform-locks-753159"
 }

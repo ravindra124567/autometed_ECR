@@ -1,5 +1,5 @@
 provider "aws" {
-  region = var.aws_region
+  region  = var.aws_region
 }
 
 # Create an S3 bucket for Terraform state

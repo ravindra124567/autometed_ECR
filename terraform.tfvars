@@ -1,5 +1,5 @@
 aws_region           = "us-east-1"
-ecr_repository_name  = "first-repository"
+ecr_repository_name  = "terraform-repository"
 s3_bucket_name       = "manas-ecr-terraform-state-bucket123"
 state_file_key       = "terraform/state.tfstate"
-dynamodb_table_name  = "ecr-terraform-locks"
+dynamodb_table_name  = "ecr-terraform-locks-753159"
