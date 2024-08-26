@@ -1,5 +1,5 @@
 aws_region           = "us-east-1"
 ecr_repository_name  = "terraform-repository"
-s3_bucket_name       = "ravindra-ecr-terraform-state-bucket125"
+s3_bucket_name       = "ravindra-ecr-terraform-state-bucket128"
 state_file_key       = "terraform/state.tfstate"
 dynamodb_table_name  = "ecr-terraform-locks-753157"
